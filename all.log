@@ -1,0 +1,6 @@
+2021-02-24 20:23:41.608 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='_form_44_submit' and text() = ' Send your message ']
+2021-02-24 20:23:41.759 [main] INFO  Pages.BasePage - Check element with xpath exists: //div[text()='Enter a valid email address.']
+2021-02-24 20:23:42.094 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='_form_44_submit' and text() = ' Send your message ']
+2021-02-24 20:23:42.319 [main] INFO  Pages.BasePage - Check element with xpath exists: //div[text()='Enter a valid email address.']
+2021-02-24 20:23:42.780 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='_form_44_submit' and text() = ' Send your message ']
+2021-02-24 20:23:42.917 [main] INFO  Pages.BasePage - Check element with xpath exists: //div[text()='Enter a valid email address.']
