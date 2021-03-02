@@ -25,14 +25,38 @@ public class MainPage extends BasePage {
     public static final String UKRAINIAN = "//*[@id='SiteNavLabel-all-languages']/ul/li[33]/a";
     public static final String VIETNAMESE = "//*[@id='SiteNavLabel-all-languages']/ul/li[35]/a";
 
+    public static final String PROFILE = "//a[@class='site-header__account']";
+    public static final String CART = "//a[@class='site-header__cart']";
+    public static final String CURRENCY = "//span[@class='cbb-menu-button']";
+
     public void navigateToMainPage() {
         webDriver.get(Consts.MAIN_URL);
 
     }
 
-    public boolean isLogoVisible() {
-        Boolean isVisible = elementExistsByXpath(LOGO_IMG);
+    public boolean isAccountButtonVisible() {
+        boolean isVisible = elementExistsByXpath(PROFILE);
         return isVisible;
+    }
+
+    public boolean isCartButtonVisible() {
+        boolean isVisible = elementExistsByXpath(CART);
+        return isVisible;
+    }
+
+    public boolean isCurrencyButtonVisible() {
+        boolean isVisible = elementExistsByXpath(CURRENCY);
+        return isVisible;
+    }
+
+    public boolean isLogoVisible() {
+        boolean isVisible = elementExistsByXpath(LOGO_IMG);
+        return isVisible;
+    }
+
+    public LoginPage openLoginPage() {
+        clickElementByXpath(PROFILE);
+        return new LoginPage();
     }
 
     public ContactUsPage openContactUsPage() {

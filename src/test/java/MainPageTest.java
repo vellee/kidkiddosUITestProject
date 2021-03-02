@@ -39,6 +39,37 @@ public class MainPageTest extends UseCaseBase {
         assertTrue(success);
     }
 
+    // Test if button Account in upper right menu is visible
+    @Test
+    public void isAccountBTNVisible() {
+        boolean success = mainPage.isAccountButtonVisible();
+        assertTrue(success);
+    }
+
+    // Test if button Cart in upper right menu is visible
+    @Test
+    public void isCartBTNVisible() {
+        boolean success = mainPage.isCartButtonVisible();
+        assertTrue(success);
+    }
+
+    // Test if button Currency in upper right menu is visible
+    @Test
+    public void isCurrencyBTNVisible() {
+        boolean success = mainPage.isCurrencyButtonVisible();
+        assertTrue(success);
+    }
+
+    // Test if "Login Page" is loaded from upper right menu
+    @Test
+    public void openLoginPage() {
+        logger.info("Login Page load Test");
+        LoginPage loginPage = mainPage.openLoginPage();
+        boolean isLoaded = loginPage.isPageTitleVisible();
+        assertTrue(isLoaded);
+        mainPage.takeScreenShot("LoginPageTest");
+    }
+
     // Test if "Contact Us" page is loaded from upper menu
     @Test
     public void openContactUsPageTest() {

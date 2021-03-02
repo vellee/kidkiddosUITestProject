@@ -4,6 +4,8 @@ public class Consts {
 
     public static final String MAIN_URL = "https://kidkiddos.com/";
     public static final String CONTACT_US_URL = "https://kidkiddos.com/pages/contact-us";
+    public static final String LOGIN_URL = "https://kidkiddos.com/account/login";
+
 
     // Correct values for drop-down box "Books by Language" from upper menu
     public enum LANGUAGES {
@@ -27,6 +29,7 @@ public class Consts {
             return this.name;
         }
     }
+
     public enum ALL_LANGUAGES {
 
         HUNGARIAN("Hungarian - Magyar"),
