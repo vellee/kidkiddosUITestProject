@@ -1,3 +1,5 @@
+import Pages.CreateAccountPage;
+import Pages.FAQPage;
 import Pages.LoginPage;
 import Utils.UseCaseBase;
 import org.apache.logging.log4j.LogManager;
@@ -50,5 +52,14 @@ public class LoginPageTest extends UseCaseBase {
     public void checkEmptyInputErrorMSG() {
         loginPage.sendEmptyInput();
         assertTrue(loginPage.findEmptyInputErrorMSG());
+    }
+
+    @Test
+    public void openCreatePageTest() {
+        logger.info("Create Account Page");
+        CreateAccountPage createAccountPage = loginPage.openCreateAccountPage();
+        boolean isLoaded = createAccountPage.isPageTitleVisible();
+        assertTrue(isLoaded);
+        loginPage.takeScreenShot("Create Account Page");
     }
 }

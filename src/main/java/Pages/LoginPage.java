@@ -43,6 +43,11 @@ public class LoginPage extends BasePage {
         return elementExistsByXpath(ERROR);
     }
 
+    public CreateAccountPage openCreateAccountPage() {
+        clickElementByXpath(CREATE_ACCOUNT);
+        return new CreateAccountPage();
+    }
+
 
 }
 
