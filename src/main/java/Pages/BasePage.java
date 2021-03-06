@@ -65,4 +65,10 @@ public class BasePage {
             e.printStackTrace();
         }
     }
+
+    protected String readValueOfElement(String xpath) {
+        WebElement webElement = webDriver.findElement(By.xpath(xpath));
+        return webElement.getAttribute("value");
+
+    }
 }

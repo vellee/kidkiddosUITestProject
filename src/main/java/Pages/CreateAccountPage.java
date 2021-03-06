@@ -39,5 +39,32 @@ public class CreateAccountPage extends BasePage {
         return elementExistsByXpath(CREATE_BUTTON);
     }
 
+    public String enterFirstName(String firstName) {
+        sendTextToElementByXpath(FIRST_NAME_BOX, firstName);
 
+        return readValueOfElement(FIRST_NAME_BOX);
+    }
+
+    public String enterLastName(String lastName) {
+        sendTextToElementByXpath(LAST_NAME_BOX, lastName);
+        return readValueOfElement(LAST_NAME_BOX);
+    }
+
+    public String enterEmail(String email) {
+        sendTextToElementByXpath(EMAIL, email);
+        return readValueOfElement(EMAIL);
+    }
+
+    public String enterPassword(String pass) {
+        sendTextToElementByXpath(PASSWORD, pass);
+        return readValueOfElement(PASSWORD);
+    }
+
+    public String getCurPageURL() {
+        return getCurrentPageURL();
+    }
+
+    public void clickCreateAccountButton() {
+        clickElementByXpath(CREATE_BUTTON);
+    }
 }

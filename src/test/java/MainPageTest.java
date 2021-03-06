@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import org.junit.jupiter.params.provider.ValueSource;
-import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebElement;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -174,6 +174,24 @@ public class MainPageTest extends UseCaseBase {
         boolean isLoaded = faqPage.isPageTitleVisible();
         assertTrue(isLoaded);
         mainPage.takeScreenShot("FAQPage");
+    }
+
+    @Test
+    public void isCurrencyVisible() {
+        boolean success = mainPage.isCurrencyButtonVisible();
+        assertTrue(success);
+    }
+
+    @Test
+    public void isUSDVisible() {
+        boolean success = mainPage.isUSDVisible();
+        assertTrue(success);
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"EUR","USD", "CAD", "EUR"})
+    public void changeCurTo(String cur) {
+        mainPage.changeTo(cur);
     }
 
 }

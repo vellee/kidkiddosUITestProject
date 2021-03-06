@@ -54,7 +54,6 @@ public class ContactUsPage extends BasePage {
 
     public boolean checkEmail(String email) {
         sendTextToElementByXpath(EMAIL_INPUT_BOX, email);
-        boolean result;
         if (elementExistsByXpath(INVALID_EMAIL_MSG)) {
             return false;
         } else {

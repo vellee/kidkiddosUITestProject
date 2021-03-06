@@ -27,11 +27,13 @@ public class MainPage extends BasePage {
 
     public static final String PROFILE = "//a[@class='site-header__account']";
     public static final String CART = "//a[@class='site-header__cart']";
-    public static final String CURRENCY = "//span[@class='cbb-menu-button']";
+    public static final String CURRENCY = "//span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']";
+    public static final String USD = "/html/body/ul[2]/li[10]";
+    public static final String EUR = "/html/body/ul[2]/li[5]";
+    public static final String CAD = "/html/body/ul[2]/li[4]";
 
     public void navigateToMainPage() {
         webDriver.get(Consts.MAIN_URL);
-
     }
 
     public boolean isAccountButtonVisible() {
@@ -47,6 +49,31 @@ public class MainPage extends BasePage {
     public boolean isCurrencyButtonVisible() {
         boolean isVisible = elementExistsByXpath(CURRENCY);
         return isVisible;
+    }
+
+    public boolean isUSDVisible() {
+        clickElementByXpath(CURRENCY);
+        return elementExistsByXpath(USD);
+    }
+
+    public void changeTo(String currency) {
+        switch (currency) {
+            case "USD":
+                clickElementByXpath(CURRENCY);
+                clickElementByXpath(USD);
+                break;
+            case "CAD":
+                clickElementByXpath(CURRENCY);
+                clickElementByXpath(CAD);
+                break;
+            case "EUR":
+                clickElementByXpath(CURRENCY);
+                clickElementByXpath(EUR);
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + currency);
+
+        }
     }
 
     public boolean isLogoVisible() {
@@ -87,6 +114,11 @@ public class MainPage extends BasePage {
     public FAQPage openFAQPage() {
         clickElementByXpath(FAQ);
         return new FAQPage();
+    }
+
+    public CartPage openCartPage() {
+        clickElementByXpath(CART);
+        return new CartPage();
     }
 
     public boolean isDDBBooksByLanguageVisible() {
@@ -160,4 +192,6 @@ public class MainPage extends BasePage {
         }
         return languageSelected;
     }
+
+
 }
