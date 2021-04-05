@@ -205,10 +205,20 @@ public class MainPage extends BasePage {
     // Reads total number of books in current cart
 
     public String numberOfBooksInCart() {
-        //COUNTER = Integer.parseInt(readValueOfCart(CART_NUMBER));
+
         NUMBER_OF_BOOKS_IN_CART = readValueOfCart(CART_NUMBER);
         return NUMBER_OF_BOOKS_IN_CART;
 
+    }
+
+    public void clearCart() {
+        CartPage cartPage = new CartPage();
+
+        int COUNTER = Integer.parseInt(readValueOfCart(CART_NUMBER));
+        while (COUNTER != 0) {
+            cartPage.removeItemFromCart();
+            COUNTER--;
+        }
     }
 
 }

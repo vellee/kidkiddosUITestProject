@@ -27,6 +27,7 @@ public class MainPageTest extends UseCaseBase {
     // Steps performed before each test runs
     @BeforeEach
     public void beforeTest() {
+
         mainPage.navigateToMainPage();
     }
 
@@ -121,6 +122,7 @@ public class MainPageTest extends UseCaseBase {
         englishPage.findAndAddFirstBookFound();
         assertEquals("1", mainPage.numberOfBooksInCart());
         logger.info("One English book added successfully");
+        mainPage.clearCart();
     }
 
     // Test if 2 books in English language can be added to cart
@@ -136,6 +138,7 @@ public class MainPageTest extends UseCaseBase {
         englishPage.findAndAddSecondBookFound();
         assertEquals("2", mainPage.numberOfBooksInCart());
         logger.info("Two English books added successfully");
+        mainPage.clearCart();
     }
 
     // Test if 1 book in French language can be added to cart
@@ -147,6 +150,7 @@ public class MainPageTest extends UseCaseBase {
         frenchPage.findAndAddFirstBookFound();
         assertEquals("1", mainPage.numberOfBooksInCart());
         logger.info("One French book added successfully");
+        mainPage.clearCart();
     }
 
     // Test if 2 books in French language can be added to cart
@@ -160,6 +164,7 @@ public class MainPageTest extends UseCaseBase {
         frenchPage.findAndAddSecondBookFound();
         assertEquals("2", mainPage.numberOfBooksInCart());
         logger.info("Two French books added successfully");
+        mainPage.clearCart();
     }
 
     // Test if 4 books in different languages can be added to cart
@@ -180,6 +185,7 @@ public class MainPageTest extends UseCaseBase {
 
         assertEquals("4", mainPage.numberOfBooksInCart());
         logger.info("Four different books added successfully");
+        mainPage.clearCart();
     }
 
 

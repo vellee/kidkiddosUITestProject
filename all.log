@@ -1,18 +1,133 @@
-2021-04-05 14:31:46.607 [main] INFO  MainPageTest - Adding 4 different books to cart test
-2021-04-05 14:31:46.615 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Français']
-2021-04-05 14:31:48.964 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='French - Français']
-2021-04-05 14:31:49.022 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/french/products/goodnight-my-love-french-childrens-picture-book']
-2021-04-05 14:31:50.877 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
-2021-04-05 14:31:53.126 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Français']
-2021-04-05 14:31:55.189 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/french/products/i-love-my-dad-french-language-childrens-book']
-2021-04-05 14:31:56.657 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
-2021-04-05 14:31:58.624 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
-2021-04-05 14:31:59.029 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[8]/a
-2021-04-05 14:32:01.785 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='English Only']
-2021-04-05 14:32:01.864 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/english-only/products/i-love-to-eat-fruits-and-vegetables-childrens-book-english-only']
-2021-04-05 14:32:03.897 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
-2021-04-05 14:32:06.731 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
-2021-04-05 14:32:07.369 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[8]/a
-2021-04-05 14:32:09.212 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/english-only/products/amandas-dream-childrens-picture-book-english-only']
-2021-04-05 14:32:10.919 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
-2021-04-05 14:32:13.489 [main] INFO  MainPageTest - Four different books added successfully
+2021-04-05 15:25:27.147 [main] INFO  MainPageTest - Chinese books page load test
+2021-04-05 15:25:27.149 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='中文']
+2021-04-05 15:25:29.006 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text() = 'Mandarin Chinese - 中文']
+2021-04-05 15:25:30.129 [main] INFO  MainPageTest - Login Page load Test
+2021-04-05 15:25:30.129 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@class='site-header__account']
+2021-04-05 15:25:30.810 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='Login']
+2021-04-05 15:25:31.518 [main] INFO  MainPageTest - Add 2 French book to cart test
+2021-04-05 15:25:31.518 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Français']
+2021-04-05 15:25:34.500 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='French - Français']
+2021-04-05 15:25:34.513 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/french/products/goodnight-my-love-french-childrens-picture-book']
+2021-04-05 15:25:35.478 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 15:25:36.565 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Français']
+2021-04-05 15:25:37.153 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/french/products/i-love-my-dad-french-language-childrens-book']
+2021-04-05 15:25:38.084 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 15:25:38.948 [main] INFO  MainPageTest - Two French books added successfully
+2021-04-05 15:25:38.965 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@class='btn btn--small btn--secondary cart__remove']
+2021-04-05 15:25:39.964 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@class='btn btn--small btn--secondary cart__remove']
+2021-04-05 15:25:41.110 [main] INFO  Pages.BasePage - Clicking element with xpath: //span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']
+2021-04-05 15:25:42.161 [main] INFO  Pages.BasePage - Clicking element with xpath: /html/body/ul[2]/li[5]
+2021-04-05 15:25:42.781 [main] INFO  Pages.BasePage - Clicking element with xpath: //span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']
+2021-04-05 15:25:42.873 [main] INFO  Pages.BasePage - Clicking element with xpath: /html/body/ul[2]/li[10]
+2021-04-05 15:25:43.579 [main] INFO  Pages.BasePage - Clicking element with xpath: //span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']
+2021-04-05 15:25:43.672 [main] INFO  Pages.BasePage - Clicking element with xpath: /html/body/ul[2]/li[4]
+2021-04-05 15:25:44.257 [main] INFO  Pages.BasePage - Clicking element with xpath: //span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']
+2021-04-05 15:25:44.351 [main] INFO  Pages.BasePage - Clicking element with xpath: /html/body/ul[2]/li[5]
+2021-04-05 15:25:44.938 [main] INFO  Pages.BasePage - Check element with xpath exists: //a[@class='site-header__account']
+2021-04-05 15:25:45.413 [main] INFO  MainPageTest - Add 1 English book to cart test
+2021-04-05 15:25:45.414 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:25:45.530 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[8]/a
+2021-04-05 15:25:46.961 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='English Only']
+2021-04-05 15:25:47.374 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/english-only/products/i-love-to-eat-fruits-and-vegetables-childrens-book-english-only']
+2021-04-05 15:25:48.144 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 15:25:49.042 [main] INFO  MainPageTest - One English book added successfully
+2021-04-05 15:25:49.059 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@class='btn btn--small btn--secondary cart__remove']
+2021-04-05 15:25:50.286 [main] INFO  MainPageTest - English books page load test
+2021-04-05 15:25:50.286 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:25:50.373 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[8]/a
+2021-04-05 15:25:50.890 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='English Only']
+2021-04-05 15:25:51.859 [main] INFO  MainPageTest - Adding 4 different books to cart test
+2021-04-05 15:25:51.860 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Français']
+2021-04-05 15:25:52.463 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='French - Français']
+2021-04-05 15:25:52.503 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/french/products/goodnight-my-love-french-childrens-picture-book']
+2021-04-05 15:25:53.167 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 15:25:54.348 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Français']
+2021-04-05 15:25:55.024 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/french/products/i-love-my-dad-french-language-childrens-book']
+2021-04-05 15:25:55.643 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 15:25:56.595 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:25:56.659 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[8]/a
+2021-04-05 15:25:57.313 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='English Only']
+2021-04-05 15:25:57.347 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/english-only/products/i-love-to-eat-fruits-and-vegetables-childrens-book-english-only']
+2021-04-05 15:25:57.965 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 15:25:58.881 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:25:58.939 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[8]/a
+2021-04-05 15:25:59.668 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/english-only/products/amandas-dream-childrens-picture-book-english-only']
+2021-04-05 15:26:00.620 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 15:26:01.718 [main] INFO  MainPageTest - Four different books added successfully
+2021-04-05 15:26:01.733 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@class='btn btn--small btn--secondary cart__remove']
+2021-04-05 15:26:03.184 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@class='btn btn--small btn--secondary cart__remove']
+2021-04-05 15:26:04.412 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@class='btn btn--small btn--secondary cart__remove']
+2021-04-05 15:26:05.531 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@class='btn btn--small btn--secondary cart__remove']
+2021-04-05 15:26:07.152 [main] INFO  Pages.BasePage - Check element with xpath exists: //*[@id='SiteNav']/li[7]/a
+2021-04-05 15:26:07.907 [main] INFO  Pages.BasePage - Check element with xpath exists: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:26:07.926 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:26:07.972 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[1]/a
+2021-04-05 15:26:09.426 [main] INFO  MainPageTest - ALBANIAN language selected from drop-down menu "Books by languages"
+2021-04-05 15:26:10.224 [main] INFO  Pages.BasePage - Check element with xpath exists: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:26:10.232 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:26:10.281 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[7]/a
+2021-04-05 15:26:12.446 [main] INFO  MainPageTest - DUTCH language selected from drop-down menu "Books by languages"
+2021-04-05 15:26:13.023 [main] INFO  Pages.BasePage - Check element with xpath exists: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:26:13.061 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:26:13.117 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[8]/a
+2021-04-05 15:26:13.667 [main] INFO  MainPageTest - ENGLISH language selected from drop-down menu "Books by languages"
+2021-04-05 15:26:14.227 [main] INFO  MainPageTest - Spanish books page load test
+2021-04-05 15:26:14.227 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Español']
+2021-04-05 15:26:16.287 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='Spanish - Español']
+2021-04-05 15:26:17.201 [main] INFO  Pages.BasePage - Check element with xpath exists: //span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']
+2021-04-05 15:26:18.083 [main] INFO  Pages.BasePage - Check element with xpath exists: //a[@aria-controls='SiteNavLabel-ebooks-by-language']
+2021-04-05 15:26:18.127 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@aria-controls='SiteNavLabel-ebooks-by-language']
+2021-04-05 15:26:18.182 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-ebooks-by-language']/ul/li[5]/a
+2021-04-05 15:26:20.400 [main] INFO  MainPageTest - English Only language selected from drop-down menu "eBooks by languages"
+2021-04-05 15:26:20.956 [main] INFO  MainPageTest - Contact Us Page load test
+2021-04-05 15:26:20.956 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Contact us']
+2021-04-05 15:26:21.508 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text() = 'Contact us']
+2021-04-05 15:26:22.358 [main] INFO  MainPageTest - French books page load test
+2021-04-05 15:26:22.359 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Français']
+2021-04-05 15:26:23.270 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='French - Français']
+2021-04-05 15:26:24.364 [main] INFO  Pages.BasePage - Check element with xpath exists: //a[@class='site-header__cart']
+2021-04-05 15:26:24.938 [main] INFO  MainPageTest - FAQ page load test
+2021-04-05 15:26:24.939 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='FAQs']
+2021-04-05 15:26:26.185 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='FAQ/addition info']
+2021-04-05 15:26:27.156 [main] INFO  MainPageTest - Home page load test
+2021-04-05 15:26:27.156 [main] INFO  Pages.BasePage - Check element with xpath exists: //img[@itemprop='logo']
+2021-04-05 15:26:27.179 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Home']
+2021-04-05 15:26:27.727 [main] INFO  Pages.BasePage - Check element with xpath exists: //*[@id='shopify-section-hero']/div/div/div/a
+2021-04-05 15:26:29.132 [main] INFO  MainPageTest - Add 2 English books to cart test
+2021-04-05 15:26:29.132 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:26:29.222 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[8]/a
+2021-04-05 15:26:29.909 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='English Only']
+2021-04-05 15:26:30.312 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/english-only/products/i-love-to-eat-fruits-and-vegetables-childrens-book-english-only']
+2021-04-05 15:26:31.119 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 15:26:32.247 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:26:32.306 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[8]/a
+2021-04-05 15:26:33.714 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/english-only/products/amandas-dream-childrens-picture-book-english-only']
+2021-04-05 15:26:34.713 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 15:26:35.838 [main] INFO  MainPageTest - Two English books added successfully
+2021-04-05 15:26:35.854 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@class='btn btn--small btn--secondary cart__remove']
+2021-04-05 15:26:37.666 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@class='btn btn--small btn--secondary cart__remove']
+2021-04-05 15:26:38.903 [main] INFO  MainPageTest - Main page load test
+2021-04-05 15:26:38.903 [main] INFO  Pages.BasePage - Check element with xpath exists: //img[@itemprop='logo']
+2021-04-05 15:26:40.282 [main] INFO  Pages.BasePage - Check element with xpath exists: //*[@id='SiteNav']/li[7]/a
+2021-04-05 15:26:40.323 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[7]/a
+2021-04-05 15:26:40.380 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-all-languages']/ul/li[15]/a
+2021-04-05 15:26:42.534 [main] INFO  MainPageTest - HUNGARIAN language selected from drop-down menu "All languages"
+2021-04-05 15:26:43.211 [main] INFO  Pages.BasePage - Check element with xpath exists: //*[@id='SiteNav']/li[7]/a
+2021-04-05 15:26:43.220 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[7]/a
+2021-04-05 15:26:43.267 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-all-languages']/ul/li[33]/a
+2021-04-05 15:26:45.412 [main] INFO  MainPageTest - UKRAINIAN language selected from drop-down menu "All languages"
+2021-04-05 15:26:45.978 [main] INFO  Pages.BasePage - Check element with xpath exists: //*[@id='SiteNav']/li[7]/a
+2021-04-05 15:26:46.016 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[7]/a
+2021-04-05 15:26:46.073 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-all-languages']/ul/li[35]/a
+2021-04-05 15:26:48.082 [main] INFO  MainPageTest - VIETNAMESE language selected from drop-down menu "All languages"
+2021-04-05 15:26:48.734 [main] INFO  Pages.BasePage - Clicking element with xpath: //span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']
+2021-04-05 15:26:48.835 [main] INFO  Pages.BasePage - Check element with xpath exists: /html/body/ul[2]/li[10]
+2021-04-05 15:26:49.330 [main] INFO  Pages.BasePage - Check element with xpath exists: //*[@id='SiteNav']/li[2]/a
+2021-04-05 15:26:49.810 [main] INFO  Pages.BasePage - Check element with xpath exists: //span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']
+2021-04-05 15:26:50.307 [main] INFO  MainPageTest - Add 1 French book to cart test
+2021-04-05 15:26:50.307 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Français']
+2021-04-05 15:26:50.867 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='French - Français']
+2021-04-05 15:26:50.916 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/french/products/goodnight-my-love-french-childrens-picture-book']
+2021-04-05 15:26:51.565 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 15:26:53.552 [main] INFO  MainPageTest - One French book added successfully
+2021-04-05 15:26:53.567 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@class='btn btn--small btn--secondary cart__remove']
