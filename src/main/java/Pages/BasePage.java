@@ -71,4 +71,11 @@ public class BasePage {
         return webElement.getAttribute("value");
 
     }
+
+    // Reads and returns current number of books added to CART
+    protected String readValueOfCart(String xpath) {
+        WebElement webElement = webDriver.findElement(By.xpath(xpath));
+        return webElement.getAttribute("outerText");
+
+    }
 }

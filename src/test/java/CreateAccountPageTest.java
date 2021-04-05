@@ -107,7 +107,7 @@ public class CreateAccountPageTest extends UseCaseBase {
 
     // Test for invalid input to Email input box
     @ParameterizedTest
-    @ValueSource(strings = {"X", "test@","net@net","load.net"})
+    @ValueSource(strings = {"X", "test@","@net","load.net"})
     public void invalidEmailInputTest(String invalidEmail) {
         String readEmail = createAccountPage.enterEmail(invalidEmail);
         assertEquals(invalidEmail, readEmail);

@@ -1,8 +1,18 @@
-2021-03-05 23:09:19.243 [main] INFO  Pages.BasePage - Clicking element with xpath: //span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']
-2021-03-05 23:09:19.315 [main] INFO  Pages.BasePage - Clicking element with xpath: /html/body/ul[2]/li[5]
-2021-03-05 23:09:19.924 [main] INFO  Pages.BasePage - Clicking element with xpath: //span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']
-2021-03-05 23:09:20.427 [main] INFO  Pages.BasePage - Clicking element with xpath: /html/body/ul[2]/li[10]
-2021-03-05 23:09:21.301 [main] INFO  Pages.BasePage - Clicking element with xpath: //span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']
-2021-03-05 23:09:21.392 [main] INFO  Pages.BasePage - Clicking element with xpath: /html/body/ul[2]/li[4]
-2021-03-05 23:09:22.072 [main] INFO  Pages.BasePage - Clicking element with xpath: //span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']
-2021-03-05 23:09:22.159 [main] INFO  Pages.BasePage - Clicking element with xpath: /html/body/ul[2]/li[5]
+2021-04-05 14:31:46.607 [main] INFO  MainPageTest - Adding 4 different books to cart test
+2021-04-05 14:31:46.615 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Français']
+2021-04-05 14:31:48.964 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='French - Français']
+2021-04-05 14:31:49.022 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/french/products/goodnight-my-love-french-childrens-picture-book']
+2021-04-05 14:31:50.877 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 14:31:53.126 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[text()='Français']
+2021-04-05 14:31:55.189 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/french/products/i-love-my-dad-french-language-childrens-book']
+2021-04-05 14:31:56.657 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 14:31:58.624 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
+2021-04-05 14:31:59.029 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[8]/a
+2021-04-05 14:32:01.785 [main] INFO  Pages.BasePage - Check element with xpath exists: //h1[text()='English Only']
+2021-04-05 14:32:01.864 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/english-only/products/i-love-to-eat-fruits-and-vegetables-childrens-book-english-only']
+2021-04-05 14:32:03.897 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 14:32:06.731 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNav']/li[2]/a
+2021-04-05 14:32:07.369 [main] INFO  Pages.BasePage - Clicking element with xpath: //*[@id='SiteNavLabel-books-by-language']/ul/li[8]/a
+2021-04-05 14:32:09.212 [main] INFO  Pages.BasePage - Clicking element with xpath: //a[@href='/collections/english-only/products/amandas-dream-childrens-picture-book-english-only']
+2021-04-05 14:32:10.919 [main] INFO  Pages.BasePage - Clicking element with xpath: //button[@id='AddToCart-product-template']
+2021-04-05 14:32:13.489 [main] INFO  MainPageTest - Four different books added successfully

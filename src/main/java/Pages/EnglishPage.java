@@ -1,14 +1,14 @@
 package Pages;
 
-public class FrenchPage extends BasePage {
-    public static final String LOGO_FRENCH = "//h1[text()='French - Français']";
-    public static final String BOOK_1 = "//a[@href='/collections/french/products/goodnight-my-love-french-childrens-picture-book']";
-    public static final String BOOK_2 = "//a[@href='/collections/french/products/i-love-my-dad-french-language-childrens-book']";
+public class EnglishPage extends BasePage {
+    public static final String LOGO_ENGLISH = "//h1[text()='English Only']";
+    public static final String BOOK_1 = "//a[@href='/collections/english-only/products/i-love-to-eat-fruits-and-vegetables-childrens-book-english-only']";
+    public static final String BOOK_2 = "//a[@href='/collections/english-only/products/amandas-dream-childrens-picture-book-english-only']";
     public static final String ADD_TO_CART_BUTTON = "//button[@id='AddToCart-product-template']";
 
     // Returns TRUE when page is loaded and Logo is visible
     public boolean isPageTitleVisible() {
-        return elementExistsByXpath(LOGO_FRENCH);
+        return elementExistsByXpath(LOGO_ENGLISH);
     }
 
     // Finds and adds to CART one book
@@ -22,5 +22,4 @@ public class FrenchPage extends BasePage {
         clickElementByXpath(BOOK_2);
         clickElementByXpath(ADD_TO_CART_BUTTON);
     }
-
 }

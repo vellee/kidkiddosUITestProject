@@ -100,6 +100,89 @@ public class MainPageTest extends UseCaseBase {
         mainPage.takeScreenShot("FrenchBooksPage");
     }
 
+    // Test if "English" page is loaded from upper menu
+    @Test
+    public void openEnglishPageTest() {
+        logger.info("English books page load test");
+        EnglishPage englishPage = mainPage.openEnglishPage();
+        boolean isLoaded = englishPage.isPageTitleVisible();
+        assertTrue(isLoaded);
+        mainPage.takeScreenShot("EnglishBooksPage");
+    }
+
+    // Test if 1 book in English language can be added to cart
+    @Test
+    public void addingEnglishBookTest() {
+        logger.info("Add 1 English book to cart test");
+        EnglishPage englishPage = mainPage.openEnglishPage();
+        boolean isLoaded = englishPage.isPageTitleVisible();
+        assertTrue(isLoaded);
+        mainPage.takeScreenShot("EnglishBooksPage");
+        englishPage.findAndAddFirstBookFound();
+        assertEquals("1", mainPage.numberOfBooksInCart());
+        logger.info("One English book added successfully");
+    }
+
+    // Test if 2 books in English language can be added to cart
+    @Test
+    public void addingTwoEnglishBooksTest() {
+        logger.info("Add 2 English books to cart test");
+        EnglishPage englishPage = mainPage.openEnglishPage();
+        boolean isLoaded = englishPage.isPageTitleVisible();
+        assertTrue(isLoaded);
+        mainPage.takeScreenShot("EnglishBooksPage");
+        englishPage.findAndAddFirstBookFound();
+        mainPage.openEnglishPage();
+        englishPage.findAndAddSecondBookFound();
+        assertEquals("2", mainPage.numberOfBooksInCart());
+        logger.info("Two English books added successfully");
+    }
+
+    // Test if 1 book in French language can be added to cart
+    @Test
+    public void addingOneFrenchBookTest() {
+        logger.info("Add 1 French book to cart test");
+        FrenchPage frenchPage = mainPage.openFrenchPage();
+        assertTrue(frenchPage.isPageTitleVisible());
+        frenchPage.findAndAddFirstBookFound();
+        assertEquals("1", mainPage.numberOfBooksInCart());
+        logger.info("One French book added successfully");
+    }
+
+    // Test if 2 books in French language can be added to cart
+    @Test
+    public void addingTwoFrenchBooksTest() {
+        logger.info("Add 2 French book to cart test");
+        FrenchPage frenchPage = mainPage.openFrenchPage();
+        assertTrue(frenchPage.isPageTitleVisible());
+        frenchPage.findAndAddFirstBookFound();
+        mainPage.openFrenchPage();
+        frenchPage.findAndAddSecondBookFound();
+        assertEquals("2", mainPage.numberOfBooksInCart());
+        logger.info("Two French books added successfully");
+    }
+
+    // Test if 4 books in different languages can be added to cart
+    @Test
+    public void addingFourDiffBooksTest() {
+        logger.info("Adding 4 different books to cart test");
+        FrenchPage frenchPage = mainPage.openFrenchPage();
+        assertTrue(frenchPage.isPageTitleVisible());
+        frenchPage.findAndAddFirstBookFound();
+        mainPage.openFrenchPage();
+        frenchPage.findAndAddSecondBookFound();
+
+        EnglishPage englishPage = mainPage.openEnglishPage();
+        assertTrue(englishPage.isPageTitleVisible());
+        englishPage.findAndAddFirstBookFound();
+        mainPage.openEnglishPage();
+        englishPage.findAndAddSecondBookFound();
+
+        assertEquals("4", mainPage.numberOfBooksInCart());
+        logger.info("Four different books added successfully");
+    }
+
+
     // Test if "Chinese" page is loaded from upper menu
     @Test
     public void openChinesePageTest() {
@@ -189,7 +272,7 @@ public class MainPageTest extends UseCaseBase {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"EUR","USD", "CAD", "EUR"})
+    @ValueSource(strings = {"EUR", "USD", "CAD", "EUR"})
     public void changeCurTo(String cur) {
         mainPage.changeTo(cur);
     }

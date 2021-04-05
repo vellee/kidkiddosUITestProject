@@ -27,10 +27,13 @@ public class MainPage extends BasePage {
 
     public static final String PROFILE = "//a[@class='site-header__account']";
     public static final String CART = "//a[@class='site-header__cart']";
+    public static final String CART_NUMBER = "//div[@id='CartCount']";
     public static final String CURRENCY = "//span[@class='currency-converter-currency-button cbb-desktop-view skiptranslate notranslate']";
     public static final String USD = "/html/body/ul[2]/li[10]";
     public static final String EUR = "/html/body/ul[2]/li[5]";
     public static final String CAD = "/html/body/ul[2]/li[4]";
+    //public int COUNTER;
+    public String NUMBER_OF_BOOKS_IN_CART;
 
     public void navigateToMainPage() {
         webDriver.get(Consts.MAIN_URL);
@@ -104,6 +107,12 @@ public class MainPage extends BasePage {
     public FrenchPage openFrenchPage() {
         clickElementByXpath(FRENCH);
         return new FrenchPage();
+    }
+
+    public EnglishPage openEnglishPage() {
+        clickElementByXpath(BOOKS_BY_LANG);
+        clickElementByXpath(ENGLISH);
+        return new EnglishPage();
     }
 
     public ChinesePage openChinesePage() {
@@ -193,5 +202,13 @@ public class MainPage extends BasePage {
         return languageSelected;
     }
 
+    // Reads total number of books in current cart
+
+    public String numberOfBooksInCart() {
+        //COUNTER = Integer.parseInt(readValueOfCart(CART_NUMBER));
+        NUMBER_OF_BOOKS_IN_CART = readValueOfCart(CART_NUMBER);
+        return NUMBER_OF_BOOKS_IN_CART;
+
+    }
 
 }
